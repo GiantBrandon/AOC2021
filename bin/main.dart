@@ -5,6 +5,7 @@ import 'package:aoc2021_1/day4.dart';
 import 'package:aoc2021_1/day5.dart';
 import 'package:aoc2021_1/day6.dart';
 import 'package:aoc2021_1/day7.dart';
+import 'package:aoc2021_1/day8.dart';
 
 void main() {
   //day1_1();
@@ -20,5 +21,7 @@ void main() {
   //day6_1();
   //day6_2();
   //day7_1();
-  day7_2();
+  //day7_2();
+  //day8_1();
+  day8_2();
 }
