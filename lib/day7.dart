@@ -1,9 +1,4 @@
-import 'dart:collection';
 import 'dart:io';
-import 'dart:convert';
-import 'dart:async';
-
-import 'dart:math';
 
 day7_1() async {
   File('C:\\Users\\brand\\Documents\\GitHub\\AOC2021\\lib\\day7.txt')

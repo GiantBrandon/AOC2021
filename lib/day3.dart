@@ -1,4 +1,3 @@
-import 'dart:collection';
 import 'dart:io';
 import 'dart:convert';
 import 'dart:async';
@@ -55,21 +54,12 @@ day3_2() async {
       co2Entries.forEach((element) {
         count += int.parse(element[i]);
       });
-      print(count);
-      print(i);
       if (count >= co2Entries.length / 2) {
-        print("remove 1");
         co2Entries.removeWhere((element) => element[i] == "1");
       } else {
-        print("remove 0");
         co2Entries.removeWhere((element) => element[i] == "0");
       }
-      print(co2Entries);
     }
-    print("oxygen");
-    print(oxygenEntries);
-    print("co2");
-    print(co2Entries);
     print(int.parse(oxygenEntries[0], radix: 2) *
         int.parse(co2Entries[0], radix: 2));
   } catch (e) {

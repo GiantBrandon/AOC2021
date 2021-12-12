@@ -1,15 +1,9 @@
-import 'dart:collection';
 import 'dart:io';
-import 'dart:convert';
-import 'dart:async';
-
-import 'dart:math';
 
 day6_1() async {
   File('C:\\Users\\brand\\Documents\\GitHub\\AOC2021\\lib\\day6.txt')
       .readAsString()
       .then((String contents) {
-    print(contents);
     Map<int, int> daysUntilBirth = Map();
     contents.split(",").forEach((element) {
       final days = int.parse(element);

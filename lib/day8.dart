@@ -1,9 +1,6 @@
-import 'dart:collection';
 import 'dart:io';
 import 'dart:convert';
 import 'dart:async';
-
-import 'dart:math';
 
 day8_1() async {
   final file =
@@ -26,7 +23,6 @@ day8_1() async {
           .length;
     }
     print(count);
-    print("test".split(""));
   } catch (e) {
     print('Error: $e');
   }
