@@ -11,6 +11,8 @@
 //import 'package:aoc2021_1/day11.dart';
 import 'package:aoc2021_1/day12.dart';
 import 'package:aoc2021_1/day13.dart';
+import 'package:aoc2021_1/day14.dart';
+import 'package:aoc2021_1/day15.dart';
 
 void main() {
   //day1_1();
@@ -38,5 +40,9 @@ void main() {
   //day12_1();
   //day12_2();
   //day13_1();
-  day13_2();
+  //day13_2();
+  //day14_1();
+  //day14_2();
+  //day15_1();
+  day15_2();
 }

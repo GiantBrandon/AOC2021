@@ -61,16 +61,16 @@ List<String> findMapping(List<String> codes) {
   mapping[8] = sortedCodes.where((code) => code.length == 7).first;
   mapping[3] = sortedCodes
       .where((code) => code.length == 5)
-      .where((code) => countSimilarities(mapping[1]!, code) == 2)
+      .where((code) => countSimilarities(mapping[1], code) == 2)
       .first;
   mapping[9] = sortedCodes
       .where((code) => code.length == 6)
-      .where((code) => countSimilarities(mapping[4]!, code) == 4)
+      .where((code) => countSimilarities(mapping[4], code) == 4)
       .first;
   mapping[5] = sortedCodes
       .where((code) => code.length == 5)
       .where((code) =>
-          code != mapping[3] && countSimilarities(mapping[4]!, code) == 3)
+          code != mapping[3] && countSimilarities(mapping[4], code) == 3)
       .first;
   mapping[2] = sortedCodes
       .where((code) => code.length == 5)
@@ -78,7 +78,7 @@ List<String> findMapping(List<String> codes) {
       .first;
   mapping[6] = sortedCodes
       .where((code) => code.length == 6)
-      .where((code) => countSimilarities(mapping[5]!, code) == 5)
+      .where((code) => countSimilarities(mapping[5], code) == 5)
       .where((code) => code != mapping[9])
       .first;
   mapping[0] = sortedCodes
